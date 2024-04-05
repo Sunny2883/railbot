@@ -1,0 +1,112 @@
+welcome to gujju railway travels. have a safe journey. here are all the informations you need to know.
+
+Stations (12):
+Gujju railway travel is providing its facilities in these 12 stations. 
+Mumbai (MU)
+Andheri (AN)
+Borivali (BL)
+Vapi (VAPI)
+Surat (ST)
+Bharuch (BR)
+Vadodara (VD)
+Anand (ANAND)
+Nadiad (ND)
+Mahemdavad (MD)
+Maninagar (MNR)
+Ahmedabad Junction (ADI)
+
+
+Distances (in kilometers):
+
+Distance of each station from a particular place (km)
+MU 0
+AN	18
+BL	30
+VAPI	140
+ST	205
+BR	247
+VD	285
+ANAND	305
+ND	320
+MD	342
+MNR	360
+ADI	372
+
+
+Fare Rate per km:
+General Class: Rs. 1.20
+Sleeper Class: Rs. 1.80
+AC Chair Car: Rs. 2.50
+AC 3 Tier: Rs. 3.20
+
+
+All Trains (5):
+there are currently 5 trains running daily.
+
+Train 1 - Intercity Express (MU - ADI)
+
+Stations: MU, AN, BL, ST, VD, ADI
+Timings:
+Departs MU: 07:00 AM
+Arrives AN: 07:30 AM
+Arrives BL: 07:50 AM
+Arrives ST: 10:00 AM
+Arrives VD: 12:00 PM
+Arrives ADI: 02:00 PM
+Classes: AC Chair Car, Sleeper Class, General Class
+Seats Available: Limited (Check online booking)
+Food Availability: Pantry Car
+
+
+Train 2 - Gujarat Mail (ST - ADI)
+
+Stations: ST, BR, VD, ANAND, ND, MNR, ADI
+Timings:
+Departs ST: 09:00 PM
+Arrives BR: 10:00 PM
+Arrives VD: 11:30 PM
+Arrives ANAND: 01:00 AM
+Arrives ND: 02:00 AM
+Arrives MNR: 03:00 AM
+Arrives ADI: 05:00 AM
+Classes: AC 3 Tier, Sleeper Class, General Class
+Seats Available: Limited (Check online booking)
+Food Availability: Pantry Car
+
+
+Train 3 - Paschim Express (BL - VD)
+
+Stations: BL, VAPI, ST, BR, VD
+Timings:
+Departs BL: 11:00 AM
+Arrives VAPI: 01:00 PM
+Arrives ST: 04:00 PM
+Arrives BR: 05:00 PM
+Arrives VD: 06:30 PM
+Classes: Sleeper Class, General Class
+Seats Available: Moderate (Check online booking)
+Food Availability: No Pantry Car
+
+
+Train 4 - Surat Local (ST - BR)
+
+Stations: ST, BR
+Timings:
+Departs ST: Every hour (08:00 AM, 09:00 AM, etc.)
+Arrives BR: 30 minutes later (08:30 AM, 09:30 AM, etc.)
+Classes: General Class
+Seats Available: Plenty
+Food Availability: No Pantry Car
+
+
+Train 5 - Sabarmati Fast Passenger (ANAND - ADI)
+
+Stations: ANAND, ND, MNR, ADI
+Timings:
+Departs ANAND: 05:00 PM
+Arrives ND: 05:30 PM
+Arrives MNR: 06:00 PM
+Arrives ADI: 07:00 PM
+Classes: General Class
+Seats Available: Plenty
+Food Availability: No Pantry Car

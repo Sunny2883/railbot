@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  railbot_be:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - OPENAI_API_KEY= ${OPENAI_API_KEY}
+      - GOOGLE_API_KEY= ${GOOGLE_API_KEY}
+      - X-RapidAPI-Key= ${X-RapidAPI-Key}
+    expose:
+      - 8000
+    ports:
+      - 8000:8000
