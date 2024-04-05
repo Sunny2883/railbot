@@ -1,1 +1,58 @@
+name: Trainbot deployment
 
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+  workflow_dispatch:
+env:
+  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+  OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
+  GOOGLE_API_KEY: ${{secrets.GOOGLE_API_KEY}}
+  X-RapidAPI-Key: ${{secrets.X_RapidAPI_Key}}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+    
+
+      - name: Build and push Docker image
+
+        run: |
+ 
+
+          docker-compose -f docker-compose-railbot.yaml build
+
+          docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+         
+          docker-compose -f docker-compose-railbot.yaml push
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          
+          source: "./docker-compose-railbot.yaml"
+          target: ./docker-compose.railbot.yaml
+
+      - name: Docker pull and run on hub 
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          key: ${{secrets.KEY}}
+          script: 
+           docker compose -f docker-compose-railbot.yaml down
+           docker compose -f docker-compose-railbot.yaml pull
+           docker compose -f docker-compose-railbot.yaml up
+
+        
+         
+          

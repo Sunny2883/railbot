@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: sunny2883/my_railbot_app-railbot_be:latest
+    image: sunny2883/my_railbot_app-railbot_be:latest 
     environment:
       - OPENAI_API_KEY= ${OPENAI_API_KEY}
       - GOOGLE_API_KEY= ${GOOGLE_API_KEY}
