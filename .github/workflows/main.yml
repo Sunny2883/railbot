@@ -49,9 +49,9 @@ jobs:
           username: ${{secrets.USERNAME}}
           key: ${{secrets.KEY}}
           script: 
-           docker compose -f docker-compose-railbot.yaml down
-           docker compose -f docker-compose-railbot.yaml pull
-           docker compose -f docker-compose-railbot.yaml up
+           sudo docker-compose -f docker-compose-railbot.yaml down
+           sudo docker-compose -f docker-compose-railbot.yaml pull
+           sudo docker-compose -f docker-compose-railbot.yaml up
 
         
          
